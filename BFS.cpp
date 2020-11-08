@@ -62,3 +62,20 @@ int main() {
   }
     return 0;
 }
+     int s;
+      cin>>s;
+      vector<bool>visited(n+1,false);
+      dist.resize(n,-1);
+      bfs(s-1,a,visited);
+
+      for(int i=0;i<dist.size();i++)
+          if(dist[i]==-1)
+              cout<<dist[i]<<" ";
+          else if(dist[i]!=0)
+              cout<<dist[i]*6<<" ";
+      cout<<endl;
+      dist.clear();
+
+  }
+    return 0;
+}
